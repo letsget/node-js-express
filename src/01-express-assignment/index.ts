@@ -5,16 +5,14 @@ import { v4 as uuid } from "uuid";
 const PORT = process.env.PORT || 8000;
 console.log("server is running on Port", PORT);
 
-
-const API_URL: `/${string}` = '/api/books'
 const app = express();
 app.use(express.json());
 
-app.get(API_URL, (request: Request, response: Response) => {
+app.get("/api/books", (request: Request, response: Response) => {
     response.status(200).json(library);
 });
 
-app.get(`${API_URL}/:id`, (request: Request, response: Response) => {
+app.get("/api/books/:id", (request: Request, response: Response) => {
     const {
         params: { id },
     } = request;
@@ -30,11 +28,11 @@ app.get(`${API_URL}/:id`, (request: Request, response: Response) => {
     response.status(200).json(foundBook);
 });
 
-app.post(`${API_URL}/login`, (request: Request, response: Response) => {
+app.post("/api/user/login", (request: Request, response: Response) => {
     response.status(200).json({ id: 1, mail: "test@mail.ru" });
 });
 
-app.post(API_URL, (request: Request, response: Response) => {
+app.post("/api/books", (request: Request, response: Response) => {
     const { body } = request;
     console.log("body", body);
     const { title, description, authors, favorite, fileCover, fileName } = body;
@@ -70,7 +68,7 @@ app.post(API_URL, (request: Request, response: Response) => {
         .json(newBook);
 });
 
-app.delete(`${API_URL}/:id`, (request: Request, response: Response) => {
+app.delete("/api/books/:id", (request: Request, response: Response) => {
     const {
         params: { id },
     } = request;
@@ -85,7 +83,7 @@ app.delete(`${API_URL}/:id`, (request: Request, response: Response) => {
     }
 });
 
-app.put(`${API_URL}/:id`, (request: Request, response: Response) => {
+app.put("/api/books/:id", (request: Request, response: Response) => {
     const { title, description, authors, favorite, fileCover, fileName } =
         request.body;
 
