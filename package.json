@@ -19,6 +19,14 @@
   "homepage": "https://github.com/letsget/node-js-express#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "typescript": "^5.9.3"
+    "express-types": "^0.0.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.0",
+    "ts-node-dev": "^2.0.0"
   }
 }
