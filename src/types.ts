@@ -6,4 +6,5 @@ export type Book = {
     favorite: boolean
     fileCover: string,
     fileName: string,
+    fileBook: string,
 }

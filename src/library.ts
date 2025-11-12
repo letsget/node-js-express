@@ -1,6 +1,4 @@
 import { Book } from "./types";
-
-
 export const library: Book[] = [
     {
         id: "1",
@@ -11,6 +9,8 @@ export const library: Book[] = [
         favorite: true,
         fileCover: "mockingbird_cover.jpg",
         fileName: "to_kill_a_mockingbird.pdf",
+        fileBook: "1740676189429-images.png",
+
     },
     {
         id: "2",
@@ -21,6 +21,7 @@ export const library: Book[] = [
         favorite: true,
         fileCover: "1984_cover.jpg",
         fileName: "1984.pdf",
+        fileBook: "1740676189429-images.png",
     },
     {
         id: "3",
@@ -30,6 +31,7 @@ export const library: Book[] = [
         favorite: true,
         fileCover: "great_gatsby_cover.jpg",
         fileName: "the_great_gatsby.pdf",
+        fileBook: "1740676189429-images.png",
     },
     {
         id: "4",
@@ -40,6 +42,7 @@ export const library: Book[] = [
         favorite: true,
         fileCover: "pride_and_prejudice_cover.jpg",
         fileName: "pride_and_prejudice.pdf",
+        fileBook: "1740676189429-images.png",
     },
     {
         id: "5",
@@ -50,5 +53,6 @@ export const library: Book[] = [
         favorite: true,
         fileCover: "catcher_in_the_rye_cover.jpg",
         fileName: "the_catcher_in_the_rye.pdf",
+        fileBook: "1740676189429-images.png",
     },
 ];

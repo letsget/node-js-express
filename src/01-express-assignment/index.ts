@@ -1,5 +1,5 @@
 import express, { Response, Request } from "express";
-import { library } from './library';
+import { library } from '../library';
 import { v4 as uuid } from "uuid";
 
 const PORT = process.env.PORT || 8000;
